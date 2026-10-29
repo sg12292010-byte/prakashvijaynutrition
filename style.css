@@ -412,3 +412,31 @@ a.wa-float {
     grid-template-columns: 1fr;
   }
 }
+/* === Coach Card Footer (Badge + Text in one line) === */
+.coach-footer {
+  display: flex;
+  flex-wrap: wrap; /* Agar jagah kam ho toh line break ho jaye */
+  align-items: center;
+  justify-content: center;
+  gap: 10px; /* Badge aur text ke beech space */
+  margin-top: 10px;
+}
+
+.experience-badge {
+  display: inline-block;
+  background: rgba(143, 172, 148, 0.15);
+  color: var(--green) !important;
+  font-size: 12px !important;
+  font-weight: 700 !important;
+  padding: 6px 12px;
+  border-radius: 20px;
+  border: 1px solid rgba(143, 172, 148, 0.3);
+  letter-spacing: 0.5px;
+  white-space: nowrap; /* Text ko tootne se rokta hai */
+}
+
+.coach-tagline {
+  font-size: 12px;
+  color: var(--muted);
+  white-space: nowrap; /* Text ko tootne se rokta hai */
+}
